@@ -2,6 +2,8 @@ mkdir build
 cd build
 if errorlevel 1 exit /b 1
 
+echo "PACKAGE_VERSION=%PKG_VERSION%" > package_version
+
 cmake -G "Ninja" ^
 	-DCMAKE_INSTALL_PREFIX=%LIBRARY_PREFIX% ^
 	-DBUILD_SHARED_LIBS=ON ^
