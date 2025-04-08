@@ -9,7 +9,7 @@ Package license: BSD-3-Clause
 
 Summary: Opus Interactive Audio Codec
 
-Development: http://opus-codec.org/development/
+Development: https://github.com/xiph/opus
 
 Documentation: http://opus-codec.org/docs/
 
@@ -20,7 +20,6 @@ intended for storage and streaming applications. It is
 standardized by the Internet Engineering Task Force
 (IETF) as RFC 6716 which incorporated technology from
 Skype's SILK codec and Xiph.Org's CELT codec.
-
 
 Current build status
 ====================
