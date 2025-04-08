@@ -24,7 +24,7 @@ requirements:
         - automake
       else:
         - ninja
-        - cmake
+        - cmake <4
 
   # seems to be maintaining compatibility across minor versions
   # https://abi-laboratory.pro/tracker/timeline/opus/
