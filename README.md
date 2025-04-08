@@ -209,5 +209,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@SeaOtocinclus](https://github.com/SeaOtocinclus/)
 * [@wolfv](https://github.com/wolfv/)
 
