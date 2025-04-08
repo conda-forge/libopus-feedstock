@@ -8,8 +8,6 @@ package:
 source:
   url: https://github.com/xiph/opus/archive/v${{ version }}.tar.gz
   sha256: 659e6b223e42a51b0a898632b9a5f406ccd5c2e00aa526ddd1264789774b94e5
-  patches:
-    - cmake_use_packageversion.patch
 
 build:
   number: 0
@@ -20,13 +18,13 @@ requirements:
     - ${{ stdlib('c') }}
     - if: unix
       then:
-        - make # [unix]
-        - autoconf # [unix]
-        - libtool # [unix]
-        - automake # [unix]
+        - make
+        - autoconf
+        - libtool
+        - automake
       else:
-        - ninja # [win]
-        - cmake # [win]
+        - ninja
+        - cmake
 
   # seems to be maintaining compatibility across minor versions
   # https://abi-laboratory.pro/tracker/timeline/opus/
