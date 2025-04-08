@@ -16,6 +16,7 @@ requirements:
   build:
     - ${{ compiler('c') }}
     - ${{ stdlib('c') }}
+    - wget
     - if: unix
       then:
         - make
