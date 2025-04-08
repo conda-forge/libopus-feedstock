@@ -16,13 +16,13 @@ requirements:
   build:
     - ${{ compiler('c') }}
     - ${{ stdlib('c') }}
-    - wget
     - if: unix
       then:
         - make
         - autoconf
         - libtool
         - automake
+        - wget # required for DNN autogen.sh
       else:
         - ninja
         - cmake <4
