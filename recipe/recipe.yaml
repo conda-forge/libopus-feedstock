@@ -1,5 +1,5 @@
 context:
-  version: "1.6"
+  version: "1.6.1"
 
 package:
   name: libopus
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/xiph/opus/archive/v${{ version }}.tar.gz
-  sha256: a9f9f04196174e4a1bdb5e0c5a85e36ebbd45a18cbbbb8be5024c59b3c001964
+  sha256: bf0b97ec7a65890b8db90ef94c4d6c18de12584c3085031953a10986f5917745
 
 build:
-  number: 1
+  number: 0
 
 requirements:
   build:
