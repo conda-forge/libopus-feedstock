@@ -8,6 +8,8 @@ package:
 source:
   url: https://github.com/xiph/opus/archive/v${{ version }}.tar.gz
   sha256: bf0b97ec7a65890b8db90ef94c4d6c18de12584c3085031953a10986f5917745
+  patches:
+    - 0001-guard-arm-dnn-rtcd.patch
 
 build:
   number: 1
@@ -25,7 +27,7 @@ requirements:
         - wget # required for DNN autogen.sh
       else:
         - ninja
-        - cmake <4
+        - cmake
 
   # seems to be maintaining compatibility across minor versions
   # https://abi-laboratory.pro/tracker/timeline/opus/
